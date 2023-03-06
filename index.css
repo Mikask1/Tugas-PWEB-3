@@ -105,6 +105,11 @@ main {
 	text-decoration: underline;
 }
 
+.hero-buttons span:hover {
+	color: #2381da;
+	filter: brightness(75%);
+}
+
 .hero-buttons h3 {
 	font-size: 1.3rem;
 	font-weight: 400;
