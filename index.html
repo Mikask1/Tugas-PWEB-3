@@ -5,16 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Apple</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
-        rel="stylesheet"
-		/>
+
+        <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="/images/apple.ico">
+        
+        <!-- CSS -->
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
+        <!-- NavBar -->
         <nav>
             <div class="layout navbar">
                 <img src="images/apple.png" class="icon" onclick="toTop()">
@@ -31,6 +30,7 @@
             </div>
         </nav>
         <main id="main">
+            <!-- Hero Section -->
             <section class="hero">
                 <div class="layout">
                     <h1>iPhone 14 Pro</h1>
@@ -46,6 +46,8 @@
                     <video src="images/apple.mp4" autoplay muted class="hero-video" id="vid">
                 </div>
             </section>
+
+            <!-- After Hero Section -->
             <section class="hero hero-next">
                 <div class="layout">
                     <h1>iPhone 14</h1>
@@ -61,7 +63,10 @@
                     <img src="images/hero-next.jpg" class="hero-video hero-next-image">
                 </div>
             </section>
+
+            <!-- Grid Section -->
             <section class="grid">
+                <!-- iPhone 14 -->
                 <section class="bg-white grid-item">
                     <div class="grid-padding">
                         <h1>iPhone 14</h1>
@@ -79,6 +84,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- MacBook Pro -->
                 <section class="bg-black grid-item">
                     <div class="grid-padding">
                         <h1>MacBook Pro</h1>
@@ -96,6 +103,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- HomePod -->
                 <section class="bg-black grid-item">
                     <div class="grid-padding">
                         <h1>HomePod</h1>
@@ -113,6 +122,8 @@
                         </div>
                     </div>
                 </section>
+
+                AirPods Pro
                 <section class="bg-black grid-item">
                     <div class="grid-padding">        
                         <h1>AirPods Pro</h1>
@@ -130,6 +141,8 @@
                     </div>
                 </div>
                 </section>
+
+                <!-- Apple Fitness -->
                 <section class="bg-gray grid-item specific">
                     <div class="grid-padding">
                         <h1>Apple Fitness+</h1>
@@ -148,6 +161,8 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Apple Card -->
                 <section class="bg-white grid-item specific">
                     <div class="grid-padding">
                         <h1>Apple Card</h1>
@@ -168,6 +183,8 @@
                 </section>
             </section>
         </main>
+
+        <!-- Footer -->
         <footer style="height:25vh; background-color:black;">
             <div class="footer-div">
                 <a onclick="toTop()"><span><img src="images/apple.png" class="icon-footer">Apple</span></a>
@@ -175,7 +192,10 @@
         </footer>
     </body>
     <script>
+        // Play video immediately
         document.getElementById('vid').play();
+
+        // Smooth scroll to top
         function toTop(){
             scrollTo({
                 top: 0,
